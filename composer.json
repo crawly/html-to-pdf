@@ -1,0 +1,31 @@
+{
+  "name": "crawly/html-to-pdf",
+  "description": "Lib para converter HTML em PDF de uma maneira segura para as necessidades dos crawlers.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "João Drummond",
+      "email": "jdrummond@crawly.com.br"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Crawly\\HtmlToPdf\\HtmlToPdfProvider"
+      ]
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Crawly\\HtmlToPdf\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=7.2",
+    "mikehaertl/phpwkhtmltopdf": "^2.4",
+    "ext-dom": "*",
+    "ext-mbstring": "*",
+    "ext-libxml": "*"
+  }
+}
